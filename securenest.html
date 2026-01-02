@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Nest | Engineering</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:wght@700&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav style="padding: 20px; border-bottom: 1px solid #333;">
+        <div class="container">
+            <a href="index.html" style="font-weight: bold; color: #fff;">&larr; Back to Portfolio</a>
+        </div>
+    </nav>
+
+    <header class="container" style="padding: 60px 0; text-align: center;">
+        <p style="color: #4facfe; font-weight: bold; letter-spacing: 2px;">FULL STACK DEVELOPMENT</p>
+        <h1 style="font-size: 3rem; margin-top: 10px; font-family: 'Playfair Display', serif;">Secure Nest Platform</h1>
+        <p style="color: #aaa; max-width: 600px; margin: 20px auto;">
+            Overview: A residential security solution built with Flutter and the MERN stack, featuring AI surveillance integration.
+        </p>
+    </header>
+
+    <div class="container">
+        <img src="assets/secure-nest.png" alt="App UI Design" style="width: 100%; border-radius: 8px; margin-bottom: 50px;">
+    </div>
+
+    <section class="container" style="max-width: 800px; padding-bottom: 100px;">
+        
+        <h2 style="font-family: 'Playfair Display', serif; margin-bottom: 20px;">Technical Architecture</h2>
+        <p style="color: #ccc; margin-bottom: 40px; line-height: 1.8;">
+            I collaborated with the engineering team to build a scalable architecture. We used <strong>Flutter</strong> for a cross-platform mobile experience and <strong>Node.js/Express</strong> for a robust backend API. The system processes real-time alerts from AI surveillance cameras.
+        </p>
+
+        <h3 style="color: #fff; margin-bottom: 20px;">Frontend Implementation (Flutter)</h3>
+        <div style="background: #1e1e1e; padding: 20px; border-radius: 8px; margin-bottom: 40px; border: 1px solid #333;">
+            <pre style="color: #d4d4d4; font-family: 'Fira Code', monospace; font-size: 0.9rem; overflow-x: auto;">
+class SecurityAlert extends StatelessWidget {
+  final String alertType;
+  final DateTime timestamp;
+
+  const SecurityAlert({required this.alertType, required this.timestamp});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: alertType == 'Critical' ? Colors.redAccent : Colors.blueGrey,
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Text('Alert: $alertType at ${timestamp.toString()}'),
+    );
+  }
+}
+            </pre>
+        </div>
+
+        <h2 style="font-family: 'Playfair Display', serif; margin-bottom: 20px;">My Contribution</h2>
+        <p style="color: #ccc; margin-bottom: 40px; line-height: 1.8;">
+            I was responsible for bridging the gap between the UI design (Figma) and the functional code. I implemented the frontend widgets for the dashboard and ensured smooth API integration for the alert notification system.
+        </p>
+
+    </section>
+
+    <footer style="text-align: center; padding: 40px; border-top: 1px solid #222;">
+        <p style="color: #666;">&copy; Hassan Ali</p>
+    </footer>
+
+</body>
+</html>
